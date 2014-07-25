@@ -1,0 +1,11 @@
+/boot		emmc		/dev/bootimg
+/cache		ext4		/emmc@cache
+/data		ext4		/emmc@usrdata
+/misc		emmc		/dev/misc
+/recovery	emmc		/dev/recovery
+/emmc		vfat		/emmc@fat
+/system		ext4		/emmc@android
+/sdcard		vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1
+/nvram		emmc		/dev/nvram		flags=display="Nvram";backup=1
+/uboot		emmc		/dev/uboot		flags=display="Uboot";backup=1
+/sd-ext     auto        /dev/block/mmcblk1p2
